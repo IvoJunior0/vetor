@@ -1,0 +1,20 @@
+import math
+
+print('='*20)
+x1 = int(input("\nx1: "))
+y1 = int(input("y1: "))
+x2 = int(input("x2: "))
+y2 = int(input("y2: "))
+
+print('\n* Pares Ordenados: ')
+print(f'p1 = ({x1}, {y1})')
+print(f'p2 = ({x2}, {y2})\n')
+
+unidade = str(input('Unidade de medida (sigla): '))
+
+xD = abs(x2 - x1)
+yD = abs(y2 - y1)
+
+modulo_vetor = math.sqrt(pow(xD, 2) + pow(yD, 2))
+print(f'\nO modulo do vetor: {modulo_vetor}{unidade}\n')
+print('='*20)
